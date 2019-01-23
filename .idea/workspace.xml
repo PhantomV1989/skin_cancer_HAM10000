@@ -1,0 +1,414 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="0a9eb6a7-c32a-41af-9a60-5dd4242eeae1" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/save/sc_mnist_data" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/save/sc_mnist_model" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sc_mnist_data.py" beforeDir="false" afterPath="$PROJECT_DIR$/sc_mnist_data.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sc_mnist_model.py" beforeDir="false" afterPath="$PROJECT_DIR$/sc_mnist_model.py" afterDir="false" />
+    </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/main.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="120">
+              <caret line="46" column="13" lean-forward="true" selection-start-line="46" selection-start-column="13" selection-end-line="46" selection-end-column="13" />
+              <folding>
+                <element signature="e#0#27#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/sc_mnist_data.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-901">
+              <caret line="117" column="27" selection-start-line="117" selection-start-column="27" selection-end-line="117" selection-end-column="27" />
+              <folding>
+                <element signature="e#0#9#0" expanded="true" />
+                <element signature="e#2096#3355#0" />
+                <element signature="e#3417#3623#0" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/sc_mnist_model.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="885">
+              <caret line="298" column="14" selection-start-line="298" selection-start-column="14" selection-end-line="298" selection-end-column="14" />
+              <folding>
+                <element signature="e#0#17#0" expanded="true" />
+                <element signature="e#729#2666#0" />
+                <element signature="e#2760#4302#0" />
+                <element signature="e#4416#6567#0" />
+                <element signature="e#6604#7545#0" />
+                <element signature="e#7591#7812#0" />
+                <element signature="e#7875#8073#0" />
+                <element signature="e#8125#8248#0" />
+                <element signature="e#8308#9016#0" />
+                <element signature="e#9093#9668#0" />
+                <element signature="e#9710#10027#0" />
+                <element signature="e#10093#10793#0" />
+                <element signature="e#10862#10947#0" />
+                <element signature="e#11022#11191#0" />
+                <element signature="e#11280#11495#0" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>compress</find>
+      <find>lookup_table</find>
+      <find>raise</find>
+      <find>cuda</find>
+      <find>fprop</find>
+      <find>kernal</find>
+      <find>+ 2</find>
+      <find>bceloss</find>
+      <find>model_final</find>
+      <find>balanc</find>
+      <find>sa</find>
+      <find>save</find>
+      <find>best_acc</find>
+    </findStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/data_handler.py" />
+        <option value="$PROJECT_DIR$/sc_mnist_data.py" />
+        <option value="$PROJECT_DIR$/sc_mnist_model.py" />
+        <option value="$PROJECT_DIR$/main.py" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="-67" />
+    <option name="y" value="209" />
+    <option name="width" value="1223" />
+    <option name="height" value="634" />
+  </component>
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="Scope" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="code" type="b2602c69:ProjectViewProjectNode" />
+              <item name="code" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager">
+    <configuration name="main" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="code" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/main.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python.main" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="0a9eb6a7-c32a-41af-9a60-5dd4242eeae1" name="Default Changelist" comment="" />
+      <created>1547824819041</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1547824819041</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="61" y="25" width="1379" height="785" extended-state="6" />
+    <editor active="true" />
+    <layout>
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25368732" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.3292683" />
+      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info active="true" anchor="bottom" id="Debug" order="3" visible="true" weight="0.39481708" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Version Control" order="7" />
+      <window_info anchor="bottom" id="Terminal" order="8" />
+      <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
+      <window_info anchor="bottom" id="Python Console" order="10" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.24981245" />
+    </layout>
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/sc_mnist_model.py</url>
+          <line>159</line>
+          <option name="timeStamp" value="30" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/sc_mnist_model.py</url>
+          <line>157</line>
+          <option name="timeStamp" value="31" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/main.py</url>
+          <line>35</line>
+          <option name="timeStamp" value="36" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/sc_mnist_model.py</url>
+          <line>298</line>
+          <option name="timeStamp" value="37" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+  <component name="debuggerHistoryManager">
+    <expressions id="watch">
+      <expression>
+        <expression-string>t.nn.BCELoss()(input=t.tensor([.5,.5]), target=ground_truth)</expression-string>
+        <language-id>Python</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>t.nn.BCELoss()(input=pred, target=ground_truth)</expression-string>
+        <language-id>Python</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>len(sc_mnist_data.lookup_dx)</expression-string>
+        <language-id>Python</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>sc_mnist_data.lookup_dx</expression-string>
+        <language-id>Python</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>sc_mnist_data</expression-string>
+        <language-id>Python</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>sc_mnist_data.dx_cnt</expression-string>
+        <language-id>Python</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>train_data</expression-string>
+        <language-id>Python</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>t.nn.BCELoss()(input=t.tensor([.49,.51]), target=ground_truth)</expression-string>
+        <language-id>Python</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>t.nn.BCELoss()(input=t.tensor([.51,.49]), target=ground_truth)</expression-string>
+        <language-id>Python</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>t.nn.BCELoss()(input=t.tensor([.505,.495]), target=ground_truth)</expression-string>
+        <language-id>Python</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+    </expressions>
+    <expressions id="setValue">
+      <expression>
+        <expression-string>None</expression-string>
+        <language-id>Python</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>&lt;class 'list'&gt;: [{'lesion_id': 'HAM_0003968', 'image_id': '/home/phantomv/Desktop/interview/skin_cancer_image/skin-cancer-mnist-ham10000/HAM10000_images_part_2/ISIC_0029385.jpg', 'dx': tensor(5), 'dx_type': tensor(3), 'age': tensor(45.), 'sex': tensor(0.), 'localization': tensor(9)}, {'lesion_id': 'HAM_0006906', 'image_id': '/home/phantomv/Desktop/interview/skin_cancer_image/skin-cancer-mnist-ham10000/HAM10000_images_part_2/ISIC_0032749.jpg', 'dx': tensor(2), 'dx_type': tensor(1), 'age': tensor(80.), 'sex': tensor(0.), 'localization': tensor(0)}, {'lesion_id': 'HAM_0007523', 'image_id': '/home/phantomv/Desktop/interview/skin_cancer_image/skin-cancer-mnist-ham10000/HAM10000_images_part_1/ISIC_0029027.jpg', 'dx': tensor(3), 'dx_type': tensor(1), 'age': tensor(25.), 'sex': tensor(1.), 'localization': tensor(12)}, {'lesion_id': 'HAM_0006011', 'image_id': '/home/phantomv/Desktop/interview/skin_cancer_image/skin-cancer-mnist-ham10000/HAM10000_images_part_1/ISIC_0025198.jpg', 'dx': tensor(6),...</expression-string>
+        <language-id>Python</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>&lt;class 'list'&gt;: [Linear(in_features=75, out_features=1000, bias=True), Linear(in_features=1000, out_features=500, bias=True), Linear(in_features=500, out_features=250, bias=True), Linear(in_features=250, out_features=10, bias=True), Linear(in_features=10, out_features=7, bias=True)]</expression-string>
+        <language-id>Python</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>lesion_id      image_id       ...            sex     localization
+0      HAM_0000118  ISIC_0027419       ...           male            scalp
+1      HAM_0000118  ISIC_0025030       ...           male            scalp
+2      HAM_0002730  ISIC_0026769       ...           male            scalp
+3      HAM_0002730  ISIC_0025661       ...           male            scalp
+4      HAM_0001466  ISIC_0031633       ...           male              ear
+5      HAM_0001466  ISIC_0027850       ...           male              ear
+6      HAM_0002761  ISIC_0029176       ...           male             face
+7      HAM_0002761  ISIC_0029068       ...           male             face
+8      HAM_0005132  ISIC_0025837       ...         female             back
+9      HAM_0005132  ISIC_0025209       ...         female             back
+10     HAM_0001396  ISIC_0025276       ...         female            trunk
+11     HAM_0004234  ISIC_0029396       ...         female            chest
+12     HAM_000...</expression-string>
+        <language-id>Python</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+    </expressions>
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$USER_HOME$/.PyCharmCE2018.3/system/python_stubs/1217731696/itertools.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="122">
+          <caret line="207" column="6" selection-start-line="207" selection-start-column="6" selection-end-line="207" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/anaconda3/lib/python3.6/site-packages/torch/nn/modules/conv.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="257">
+          <caret line="319" selection-start-line="319" selection-end-line="319" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/anaconda3/lib/python3.6/site-packages/numpy/core/_methods.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="122">
+          <caret line="79" selection-start-line="79" selection-end-line="79" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/anaconda3/lib/python3.6/site-packages/torch/optim/optimizer.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="212">
+          <caret line="197" selection-start-line="197" selection-end-line="197" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/anaconda3/lib/python3.6/site-packages/torch/cuda/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="123">
+          <caret line="81" selection-start-line="81" selection-end-line="81" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sc_mnist_data.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-901">
+          <caret line="117" column="27" selection-start-line="117" selection-start-column="27" selection-end-line="117" selection-end-column="27" />
+          <folding>
+            <element signature="e#0#9#0" expanded="true" />
+            <element signature="e#2096#3355#0" />
+            <element signature="e#3417#3623#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sc_mnist_model.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="885">
+          <caret line="298" column="14" selection-start-line="298" selection-start-column="14" selection-end-line="298" selection-end-column="14" />
+          <folding>
+            <element signature="e#0#17#0" expanded="true" />
+            <element signature="e#729#2666#0" />
+            <element signature="e#2760#4302#0" />
+            <element signature="e#4416#6567#0" />
+            <element signature="e#6604#7545#0" />
+            <element signature="e#7591#7812#0" />
+            <element signature="e#7875#8073#0" />
+            <element signature="e#8125#8248#0" />
+            <element signature="e#8308#9016#0" />
+            <element signature="e#9093#9668#0" />
+            <element signature="e#9710#10027#0" />
+            <element signature="e#10093#10793#0" />
+            <element signature="e#10862#10947#0" />
+            <element signature="e#11022#11191#0" />
+            <element signature="e#11280#11495#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/main.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="46" column="13" lean-forward="true" selection-start-line="46" selection-start-column="13" selection-end-line="46" selection-end-column="13" />
+          <folding>
+            <element signature="e#0#27#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>
