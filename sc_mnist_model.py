@@ -106,11 +106,19 @@ class sc_mnist_model():
                 print('Retrying loop ', str(e))
         return
 
-    def train_model_single_label(self, data, label, batch_size=100, iter=100, lr=1e-4, save_path=None):
+    def train_model_single_label(self, data, label, batch_size=100, iter=100, lr=1e-4, save_path=None, load=False):
         try:
             self.model_final
         except:
             self.create_model(self.cnn_sizes, self.fc_sizes, output_size=2)
+        if save_path:
+            save_name = save_path + '_label_' + str(label)
+
+            if load:
+                with open(save_name, 'rb') as file_object:  # load
+                    tmp = t.load(file_object, map_location=self.device)
+                    tmp.device = self.device
+                    self = tmp
 
         data = self.balance_classes(data, 'dx')
         data = self._tensorify(data)
@@ -122,7 +130,8 @@ class sc_mnist_model():
         best_acc = []
         acc_lim = 0.692
         self.optim = t.optim.Adam(self.learning_params, lr=lr)
-        # batch_data = self.create_batch(data=data, batch_size=batch_size)
+
+        # batch_data = self.create_batch_for_label(data=data, label=label, batch_size=batch_size)
         for i in range(iter):
             print('Running iter ', i, ' of ', iter)
             try:
@@ -130,10 +139,11 @@ class sc_mnist_model():
                 pred = [[self.fprop(x), x] for x in batch_data]
                 batch_loss = [self.get_loss_single_label(pred=x[0], y=x[1], label=label) for x in pred]
 
-                l = np.median([x.data.item() for x in batch_loss])
-                print('Median batch loss @ ', l)
-
-                self.optimize_batch(batch_loss)
+                l = np.max([x.data.item() for x in batch_loss])
+                batch_loss_above_limit = list(filter(lambda x: x.data.item() > 0.685, batch_loss))
+                print('Num of wrong pred: ', len(batch_loss_above_limit), 'of ', str(batch_size), "  Max loss @",
+                      str(l), ' Label:', str(label))
+                # self.optimize_batch(batch_loss_above_limit)
 
                 if save_path:
                     def save():
@@ -157,13 +167,20 @@ class sc_mnist_model():
                                 print('Best acc')
                                 acc_lim = np.max(best_acc)
                                 save()
-                            best_acc.pop(0)
+                            elif len(best_acc) > 0:
+                                best_acc.pop(0)
+                        if len(best_acc) >= 20:
+                            break
             except Exception as e:
                 print('Retrying loop ', str(e))
         return
 
     def fprop(self, data):
         data_img = cv2.imread(data['image_id'])
+        try:
+            data['dx'].data
+        except:
+            data = self._tensorify(data)
 
         # data_img = data['dx'].data.item() * np.ones((450, 600, 3))
 
@@ -295,5 +312,60 @@ class sc_mnist_model():
         return input_shape
 
     @staticmethod
-    def multiclass_get_results(data, model_path):
+    def multiclass_get_results(data, model_path, device='cpu'):
+        data = fragment_dict_data(data)[:10]
+        save_path = '/'.join(model_path.split('/')[:-1])
+        model_name = model_path.split('/')[-1]
+
+        model_names = list(filter(lambda x: x.__contains__(model_name + '_label_'), os.listdir(save_path)))
+        model_names = [save_path + '/' + x for x in model_names]
+        label_lookup = {}
+
+        label_count = len(model_names)
+        for i in range(label_count):
+            label_lookup[i] = list(filter(lambda x: x.split('_')[-1] == str(i), model_names))[0]
+
+        results = []
+
+        for l in label_lookup:
+            print('Running inference for label: ', str(l))
+            with open(label_lookup[l], 'rb') as file_object:  # load
+                model = t.load(file_object, map_location=device)
+                model.device = device
+            temp = []
+            for d in data:
+                r = model.fprop(d).data.numpy()[0]
+                temp.append(r)
+            results.append(temp)
+
+        return
+
+    @staticmethod
+    def multiclass_train_fully_connected_booster(data, model_path, device='cpu', sizes=[]):
+
+        data = fragment_dict_data(data)[:1]
+        save_path = '/'.join(model_path.split('/')[:-1])
+        model_name = model_path.split('/')[-1]
+
+        model_names = list(filter(lambda x: x.__contains__(model_name + '_label_'), os.listdir(save_path)))
+        model_names = [save_path + '/' + x for x in model_names]
+        label_lookup = {}
+
+        label_count = len(model_names)
+        for i in range(label_count):
+            label_lookup[i] = list(filter(lambda x: x.split('_')[-1] == str(i), model_names))[0]
+
+        results = []
+
+        for l in label_lookup:
+            print('Running inference for label: ', str(l))
+            with open(label_lookup[l], 'rb') as file_object:  # load
+                model = t.load(file_object, map_location=device)
+                model.device = device
+            temp = []
+            for d in data:
+                r = model.fprop(d).data.numpy()
+                temp.append(r)
+            results.append(temp)
+
         return

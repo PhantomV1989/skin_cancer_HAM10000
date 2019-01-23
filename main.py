@@ -6,11 +6,11 @@ import cv2
 
 # note: only tested on linux system, file separator is /. If you are using windows, please change separator to \
 
-mode = 'validate'  # use, train, validate
+mode = 'train'  # use, train, validate
 # mode = 'train'
 
 # for training only
-load_from_save_state = True
+load_from_save_state = False
 save_mode = False
 
 current_dir = os.getcwd()
@@ -19,11 +19,11 @@ save_dir = get_save_path(current_dir)
 
 data_path = save_dir + '/sc_mnist_data'
 model_path = save_dir + '/sc_mnist_model'
-device = 'cuda'
+device = 'cpu'
 
 iter = 1000
-lr = 1e-8
-batch_size = 60
+lr = 1e-7
+batch_size = 6
 if __name__ == '__main__':
     sc_mnist_data = save_load_helper(save=save_mode, load=True, path=data_path,
                                      constructor=lambda: sc_mnist_data_handler(data_path=data_dir))
@@ -47,9 +47,12 @@ if __name__ == '__main__':
             )
             if save_mode:
                 ml_model.train_model_single_label(data=train_data, label=label, batch_size=batch_size, lr=lr,
-                                                  save_path=model_path, iter=iter)
+                                                  save_path=model_path, iter=iter, load=load_from_save_state)
             else:
-                ml_model.train_model_single_label(data=train_data, label=label, batch_size=batch_size, lr=lr, iter=iter)
+                ml_model.train_model_single_label(data=train_data, label=label, batch_size=batch_size, lr=lr, iter=iter,
+                                                  load=load_from_save_state)
 
     elif mode == 'validate':
-        sc_mnist_model.multiclass_get_results(sc_mnist_data, model_path=model_path)
+        unique_lesion_data = sc_mnist_data.get_imgs_by_unique_lesion_id(mode='first')
+        train_data, test_data = split_data(shuffle_dict(unique_lesion_data), 0.990)
+        sc_mnist_model.multiclass_get_results(test_data, model_path=model_path, device=device)
